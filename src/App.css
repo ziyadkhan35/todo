@@ -1,0 +1,80 @@
+body {
+  background-image: linear-gradient(265deg,#041C32,#04293A);
+}
+
+                                            /* TodoHeade.js */
+.todo-header{
+  color: #F0EBE3;
+}
+
+                                            /* TodoField.js */
+.todo_input{
+  outline: none;
+  background-color: transparent;
+  color: #F0EBE3;
+}
+.todo_add_button{
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F0EBE3;
+  font-weight: 500;
+}
+.todo_add_button:hover{
+  color: #041C32;
+  background-color: #F0EBE3;
+}
+
+                                            /* Todo.js */
+.todos-item{
+  border-radius: 20px;
+}
+.todos-item-success{
+  background-color: #1E5128;
+  color: #F0EBE3;
+}
+.todos-item-danger{
+  background-color: #FF4C29;
+  color: #F0EBE3;
+}
+.todo_name{
+  cursor: pointer;
+  caret-color: transparent;
+}
+.caret{
+  caret-color: transparent;
+}
+.todos{
+  max-height: 20rem;
+  overflow-y: auto;
+}
+.todos::-webkit-scrollbar{
+  width: .4rem;
+  background-color: aliceblue;
+  
+}
+.todos::-webkit-scrollbar-thumb{
+  background-color: black;
+}
+
+@media screen and (min-width:771px) and (max-width:943px){
+  .todo_add_button{
+      font-size: 1.6vw;
+  }
+}
+@media screen and (min-width:545px) and (max-width:767px){
+  .todo_add_button{
+      font-size: 2.4vw;
+  }
+}
+@media screen and (max-width:545px){
+  .todo_add_button{
+      font-size: 1rem;
+  }
+}
+@media screen and (max-width:285px){
+  .todo_buttons{
+      font-size: 6vw;
+  }
+}
